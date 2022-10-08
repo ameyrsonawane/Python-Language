@@ -2,6 +2,7 @@
 # set is used for to remove the duplicate values.
 # Set is a mutable datatype
 # Set support mathematical operation
+# Set is unordered
 
 
 '''sets = {10,30,50,90,30} # Set doesn't have specific order
