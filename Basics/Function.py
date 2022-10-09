@@ -3,8 +3,10 @@
 # Builtin functions - len(), print(), range(), zip()
 # zip(*iterable) - It will map the values from list1 to list2
 
+# Builtin function()--->
 
-# zip(*iterable) --->
+
+# zip(*iterable)-->
 
 '''list1 = ["Maharashtra","Madhya Pradesh","Gujrat"]
 list2 = ["Mumbai","Bhopal","Gandhinagar"]
@@ -21,7 +23,7 @@ for x,y in zip(total_cost,sale_price):
     print("profit",x-y)'''
 import multiplication as multiplication
 
-# range(start,stop) --->
+# range(start,stop)-->
 
 '''for x in range(1,10):
     print(x)'''
@@ -43,12 +45,56 @@ def mul(a,b):
 mul(5,2)
 mul(9,5)'''
 
-# Return -
+# Return -->
 
 
-def addition(x,y):
+'''def addition(x,y):
     return x+y
 z = addition(25,25)
 print(z)
 m = z*2
 print(m)
+
+
+
+# max()-->
+
+number = (1,2,3,47,55,22)
+print(max(number))
+
+# min()-->
+
+print(min(number))
+
+# iter()-->
+
+i = iter(number)
+print(next(i))
+print(next(i))
+
+# reverse()-->
+
+j = reversed(number)
+print(next(j))
+print(next(j))
+
+# slice()-->
+
+tuple1 = (5,4,5,22,64)
+x = slice(1,4)
+print(tuple1[x])
+
+# sorted()-->
+
+print(sorted(tuple1))
+
+# sum()-->
+
+print(sum(tuple1))
+
+# input()-->
+
+x = input("Enter your name: ")
+print("Welcome into new era "+x)'''
+
+
