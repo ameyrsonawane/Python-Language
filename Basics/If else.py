@@ -25,12 +25,12 @@ else:
     print("Not Satisfied")
 
 
-score = 75
+score = 95
 if score>90:
     print("1st Rank")
-elif score < 85 and score < 80:
-    print("2nd Rank")
+elif score > 35:
+    print("Pass")
 else:
-    print("3rd Rank")
+    print("Failed")
 
 

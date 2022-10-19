@@ -28,7 +28,7 @@ print("it's" in z) # Membership Operator'''
 
 # 1) len(s)- Return number of characters
 
-'''s = ("Amey")
+s = ("Amey")
 print(len(s))
 
 # 2) str(s)- Convert specified values into a string
@@ -69,7 +69,7 @@ print(s.split())
 
 # 9) Strip()
 s = "Amey Sonawane"
-print(s.strip())'''
+print(s.strip())
 
 
 # String Slicing --->

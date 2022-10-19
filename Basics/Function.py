@@ -20,8 +20,8 @@ for l1,l2 in zip(list1,list2):
 total_cost = [22,75,69,82]
 sale_price =[15,85,55,95]
 for x,y in zip(total_cost,sale_price):
-    print("profit",x-y)'''
-import multiplication as multiplication
+    print("profit",x-y)
+import multiplication as multiplication'''
 
 # range(start,stop)-->
 
@@ -48,7 +48,7 @@ mul(9,5)'''
 # Return -->
 
 
-'''def addition(x,y):
+def addition(x,y):
     return x+y
 z = addition(25,25)
 print(z)
@@ -95,6 +95,7 @@ print(sum(tuple1))
 # input()-->
 
 x = input("Enter your name: ")
-print("Welcome into new era "+x)'''
+print("Welcome into new era "+x)
+
 
 

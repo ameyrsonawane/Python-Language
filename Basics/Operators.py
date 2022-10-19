@@ -10,7 +10,7 @@ print(x//y) # Result will be near to whole number'''
 
 # Assignment Operators
 
-'''x = 10
+x = 10
 print(x)
 x += 3
 print(x)
@@ -21,7 +21,7 @@ print(x)
 x /= 2
 print(x)
 x **= 3
-print(x)'''
+print(x)
 
 # Comparison Operators
 
@@ -71,11 +71,11 @@ print(4 ** 2 + 4 - 2)'''
 
 # Boolean Datatype (True and False)
 
-x = 5
+'''x = 5
 y = 7
 z = "" # (Empty String)
 print(x == y)
 print(x < y)
-print(bool(z)) # bool function allows us to evaluate any of the values and return boolean datatype (True/False)
+print(bool(z)) # bool function allows us to evaluate any of the values and return boolean datatype (True/False)'''
 
 

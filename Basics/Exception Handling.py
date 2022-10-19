@@ -7,5 +7,5 @@ except Exception as s:
     print(s)
 
 
-finally:  # Try with Finally
-    print("No Exception")
+#finally:  # Try with Finally
+   # print("No Exception")

@@ -7,14 +7,14 @@
 
 '''a = [10,40,90] # (List start from 0 index)
 b = ["Amey","Rajendra","Sonawane"]
-c = [10,"20",40,"sir",50.1]
+c = [10,"20",40,"sir",50.1,50]
 
 print (a[2])
 print(type(c))
 print(type(b))
 print(c[0:4])
 print(c[4])
-print(c[0:4:2])'''
+print(c[0:4:3])
 
 
 # List Methods --->
@@ -73,5 +73,10 @@ print(laptop)
 mobile = ["Apple","Redmi","Vivo","Oppo"]
 print(mobile)
 mobile.clear()
-print(mobile)
+print(mobile)'''
+
+'''L1 = [1,22,55,87,93,95]
+L2 = ["a","b","c","d"]
+print(dict(zip(L1,L2)))'''
+
 

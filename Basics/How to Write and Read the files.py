@@ -47,7 +47,7 @@ f.close()
 # With keyword(No need to close the files)
 
 with open("int.txt","w") as fw:
-    fw.write("Using with keyword, no need to close the file")
+    fw.write("Using 'with' keyword, no need to close the file")
 
 with open("int.txt","r") as fr:
     print(fr.read())

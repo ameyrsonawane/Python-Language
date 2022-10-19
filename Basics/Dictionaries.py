@@ -4,7 +4,7 @@
 # Dictionary is unordered
 
 
-'''empty = {} # Empty Dictionary
+empty = {} # Empty Dictionary
 
 int = {1:22,5:47,3:55}
 print(int)
@@ -24,7 +24,7 @@ print(int)
 # Removing items from Dictionary
 
 int.pop(5)
-print(int)'''
+print(int)
 
 
 # Dictionary Methods --->

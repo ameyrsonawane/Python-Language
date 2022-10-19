@@ -6,7 +6,7 @@
 
 
 
-class car():
+'''class car():
   pass        # If we don't want to declare any details within the class put pass keyword.
 
 Tata = car()
@@ -26,4 +26,18 @@ print("On road price->",Tata.price)
 
 print("HONDA->",Honda.model_name)
 print("Manufacturing Year->",Honda.year)
-print("On road price->",Honda.price)
+print("On road price->",Honda.price)'''
+
+
+class student():
+  def __init__(self):
+    self.student_name = input("Enter Name-")
+    self.student_roll_number= int(input("Enter Roll Number-"))
+    self.department = input("Department-")
+    self.college = input("Enter College Name-")
+    print("Student Name->",self.student_name)
+    print("Student Roll Number->",self.student_roll_number)
+    print("Department->",self.department)
+    print("College_name->",self.college)
+
+a = student()
