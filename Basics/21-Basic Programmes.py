@@ -10,8 +10,8 @@ else:
 
 # Palindrome Number--> A number that remains same when it's digits are reversed.(Ex- 525,242)
 
-'''num = (input("Enter input:"))
-reverse = num[::-1]
+'''num = input("Enter input:")
+reverse = num[-1::-1]
 if (num == reverse):
     print("Palindrome")
 else:
@@ -60,8 +60,21 @@ print("Factorial=",fac)'''
 # Reverse String
 
 '''s = (input("Enter name:"))
-reverse = s[::-1]
+reverse = s[-1::-1]
 print(reverse)'''
+
+# Reverse String ( Using For Loop )
+
+'''str = input("Enter String=")
+for i in range((len(str)-1),-1,-1):
+    print(str[i],end="")'''
+
+# Reverse Statement (O/P - enawanoS ardnejaR yemA)
+
+'''word = "Amey Rajendra Sonawane"
+print(word)
+word=word[-1::-1]
+print(word)'''
 
 
 # How to Swap any two number in List
@@ -72,27 +85,48 @@ l[pos1],l[pos2] = l[pos2],l[pos1]
 print(l)'''
 
 
-# Count the No. of occurrences in the list
+# Count the No. of occurrences in the string
 
-'''s = input("Enter String")
-c = input("Enter Character to check the frequency ")
+'''s = input("Enter String-")
+c = input("Enter Character to check the frequency-")
 count = 0
 for i in s:
     if i == c:
         count += 1
-print(c,count)'''
+print(c,count)
+       #break'''            # Number of occurrence O/P = 0
 
-# How to Sum, Multiplication and Division of all numbers in the list (Error)
 
 
-'''size = int(input("Enter Numers"))
-for i in range(size):
-    val = int(input("Enter Number"))
-    size.append()
-    sum = 0
-    for i in range(size):
-        sum = sum = size[i]
-        print(sum)'''
+# Count the No. of occurrences in the string "of each character"
+
+'''str = input("Enter Name=")
+l=list(str)
+f=[l.count(ele) for ele in l]
+d=dict(zip(l,f))
+print(d)'''
+
+
+# How to find out count of Digits,Alphabets & Special Characters from string
+
+
+'''str= "AMey#12345@"
+count1=0
+count2=0
+count3=0
+for i in str:
+    if i.isdigit():
+        count1=count1+1
+    elif i.isalpha():
+        count2=count2+1
+    else:
+        count3=count3+1
+
+print("Digits=",count1)
+print("Alphabets=",count2)
+print("Special=",count3)'''
+
+
 
 
 # How to Swap first and Last element in the list
@@ -113,14 +147,24 @@ print("Height No -",l[-1])'''
 print("Height No -",max(l))'''
 
 
-# Sum of digit in the string (Check O/P)
+# Sum of digit in the string
 
-'''a = '02222225'
+'''a ="02222225"
 sum = 0
 for x in a:
-    if x in digit():
+    if x.isdigit():
         sum = sum + int(x)
-        print(sum)'''
+print(sum)'''
+
+
+# Sum of digit in the string - (Take the input from Keyboard)
+
+'''str = input("Enter string-")
+sum = 0
+for i in range(0,len(str)):
+    if (str[i].isdigit()):
+        sum = sum+int(str[i])
+print(sum)'''
 
 
 # How to Search element in the list
@@ -130,13 +174,13 @@ print("Ame" in l)'''
 
 
 '''l = [1,22,55,78]                     # 2nd Way
-num = int(input("Enter No"))
+num = int(input("Enter No="))
 for i in l:
     if i == num:
-        print("p")
+        print("Present")
         break
 else:
- print("A")'''
+ print("Not Present")'''
 
 '''l = [11,22,44,87,98]
 #c = list(l)
@@ -149,18 +193,82 @@ print(l)'''
 r = l[-1::-1]
 print(r)'''
 
+
+# Reverse List Like-->   I/P=[1,2,3,4,5,6]   O/P=[3,2,1,6,5,4]
+
+'''l=[1,2,3,4,5,6]
+print(l)
+l[0],l[2]=l[2],l[0],
+l[3],l[-1]=l[-1],l[3]
+print(l)'''
+
+
+# Find out the pairs from List who sum = 12
+
+
+'''l = [1,2,3,4,5,6,7,8,9,10]
+for i in range(len(l)):
+    for j in range(i+1,len(l)):
+        if l[i]+l[j]==12:
+            print(l[i],l[j])'''
+
+
 # Pyramid Shape
 
-'''num = int(input("Enter Number"))
+'''num = int(input("Enter Number of Rows-"))
+for i in range(0,num):         # (for loop)-for rows
+    for j in range(0,num-i-1): # (for loop)-for columns and print space
+        print(" ",end="")      # print space and end="" parameter keep on the same line
+    for j in range(0,i+1):     # (for loop)-for columns and print star
+        print("*",end=" ")     # print star
+    print()      '''              # print function for new line
+
+
+# Pyramid shape --->                                          #     1
+                                                              #    1  2
+'''num = int(input("Enter the number of rows="))              #   1  2  3
 for i in range(0,num):
     for j in range(0,num-i-1):
-        print(end="")
+        print(" ",end="")
     for j in range(0,i+1):
-        print("*",end="")
-        print()'''
+     print(j+1,end=" ")
+    print()'''
+
+# Pyramid shape --->                                        #       1
+                                                            #      2  2
+'''num = int(input("Enter the number of rows="))            #     3  3  3
+for i in range(0,num):
+    for j in range(0,num-i-1):
+        print(" ",end="")
+    for j in range(0,i+1):
+     print(i+1,end=" ")
+    print()'''
 
 
-'''def pyramid(rows):
-    for i in range(rows):
-        print(''*(rows-i-1)+'*'*(2*i+1))'''
+# Lambda Function --->
 
+'''square = lambda x: x*x
+print(square(6))'''
+
+
+'''sum = lambda a,b,c: a+b+c
+print(sum(80,3,1))'''
+
+
+# Update value with another value in Dictionary
+
+'''d={"Amey":1995,"Nishtha":2020}
+print(d)
+d["Amey"]=1990
+print(d)'''
+
+
+# Swapping
+
+'''a=5
+b=8
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)'''
