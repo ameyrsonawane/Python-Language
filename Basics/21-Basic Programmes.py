@@ -29,9 +29,9 @@ while temp > 0:
     sum += digit ** n
     temp//= 10
 if sum == num:
-    print("Armstrong No")
+    print("Armstrong Number")
 else:
-    print("Not Armstrong No")'''
+    print("Not an Armstrong Number")'''
 
 
 # Fibonacci Series--> 0 1 1 2 3 5 8
@@ -69,12 +69,19 @@ print(reverse)'''
 for i in range((len(str)-1),-1,-1):
     print(str[i],end="")'''
 
-# Reverse Statement (O/P - enawanoS ardnejaR yemA)
+# Reverse String (O/P - enawanoS ardnejaR yemA)
 
 '''word = "Amey Rajendra Sonawane"
 print(word)
 word=word[-1::-1]
 print(word)'''
+
+
+# Reverse Words (I/P - Amey Sonawane   O/P - Sonawane Amey)
+
+'''str="Amey Sonawane"
+print(str[5:],str[:4])'''
+
 
 
 # How to Swap any two number in List
@@ -198,7 +205,7 @@ print(r)'''
 
 '''l=[1,2,3,4,5,6]
 print(l)
-l[0],l[2]=l[2],l[0],
+l[0],l[2]=l[2],l[0]
 l[3],l[-1]=l[-1],l[3]
 print(l)'''
 
@@ -267,8 +274,131 @@ print(d)'''
 
 '''a=5
 b=8
+print("a =",a)
+print("b =",b)
 a=a^b
 b=a^b
 a=a^b
-print(a)
-print(b)'''
+print("a =",a)
+print("b =",b)
+'''
+
+# Swapping (Using another variable)
+
+'''a=5
+b=8
+print("a =",a)
+print("b =",b)
+temp = a
+a=b
+b = temp
+print("a =",a)
+print("b =",b)
+'''
+
+# Try: and Except:
+
+'''try:
+    num= "a"
+    if num%2==0:
+        print("Even Number")
+    else:
+        print("Number is not even")
+except:
+    print("Please Enter only Number")'''
+
+
+
+#  Remove Extra Space from the string along with ? ! .
+
+
+'''str= input("Enter String=")
+s= ""
+for i in range(len(str)):
+    if str[i]==" " and str[i+1]==" ":      # (string without "? ! .")
+
+
+    #if str[i]==" " and (str[i+1]==" " or str[i+1]=="?" or str[i+1]=="!" or str[i+1]=="."):
+        continue
+    else:
+        s=s+str[i]
+print(s)'''
+
+
+# Print the digits only from string
+
+
+'''str="test123$"
+for i in str:
+    if i.isdigit():
+        print(i)'''
+
+
+
+# Generator ==>  Generator will give you iterator(Ex- We want to fetch 1000 records from DB to print/process.
+# So here all 1000 records will be loaded in your memory, we don't want it.
+# We want work on one value at a time in this case we have to use generator. we use yield)
+
+# program for find-out the square.
+
+
+'''def topten():
+    num=1
+    while num<=10:
+        sq= num * num
+        yield sq
+        num+=1
+values= topten()    #  --> (Create the object to call method)
+for i in values:
+    print(i)'''
+
+
+
+#  Deep Copy and Shallow Copy
+
+
+# Deep Copy==> In deep copy, when we do any changes in copy of the object it will not reflect in the original object.
+
+'''import copy                     #(By Default Installed)
+l=[[1,2],[3,4]]
+cp=copy.deepcopy(l)
+print(cp)
+cp[0][0]=45
+print("Copy of Object=",cp)
+print("Original Object=",l)'''    # (To check the changes will reflect or not in the original object )
+
+
+
+# Shallow Copy==> In shallow copy, when we do any changes in copy of the object it will reflect in the original object.
+
+
+'''import copy                     #(By Default Installed)
+l=[[1,2],[3,4]]
+sh=copy.copy(l)
+print(sh)
+sh[0][0]=55
+print("Copy of Object=",sh)
+print("Original Object=",l)'''    # (To check the changes will reflect or not in the original object )
+
+# Shallow copy behave like Deep copy for simple list ?.
+
+# ==>
+
+
+# Multiple Inheritance
+
+'''
+class movie:
+    def d1 (self):
+        print("Base Class")
+class actor(movie):
+    def d2 (self):
+        print("1st Derived Class")
+class director(actor):
+    def d3 (self):
+        print("2nd Derived Class")
+obj=director()
+obj.d1()
+obj.d2()
+obj.d3()
+'''
